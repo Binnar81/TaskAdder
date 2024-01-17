@@ -1,0 +1,170 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+:root{
+  --BORDER:3px solid white;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.offscreen{
+  position:absolute;
+  left:-1000000px;
+}
+
+input,button{
+  font:inherit;
+}
+
+html{
+  background-color: black;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body{
+  min-height:100vh;
+  color: #fff;
+padding: 75px;
+  display:flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* first-box styling */
+.newItemEntry{
+  box-sizing: border-box;
+  width:500px;
+  padding:20px;
+  background-color: black;
+  border: var(--BORDER);
+  border-radius: 7px;
+  align-content: center;
+
+}
+
+.newItemEntry_form{
+  white-space: nowrap;
+  width:100%;
+  height:100% ;
+  padding:8px;
+  box-sizing:border-box;
+  border:var(--BORDER);
+  border-radius: 5px;
+
+}
+.newItemEntry_input{
+  width: 85%;
+  height:10vh;
+  padding:2px;
+  border:var(--BORDER);
+  border-radius: 5px;
+  font-size: large;
+  margin: 2px;
+}
+
+.newItemEntry_button{
+  width:10%;
+  height:10vh;
+  color: white;
+  background-color: black;
+  padding:8px;
+  box-sizing: border-box;
+  border:3px dashed white;
+  border-radius: 5px;
+
+}
+
+
+/* second-box styling */
+
+.listContainer{
+  box-sizing: border-box;
+  width: 500px;
+  padding: 7px;
+  height:50vh;
+  border: var(--BORDER);
+  border-radius: 5px;
+  white-space: nowrap;
+  
+}
+
+.listContainer_header{
+  margin:5px;
+  padding:5px;
+  display:flex;
+  flex-direction: row;
+  gap: 55vh;
+  
+}
+h2{
+  margin: 2px;
+  padding: 2px;
+}
+
+.listContainer_button{
+  color: white;
+  background-color: black;
+border: var(--BORDER);
+border-radius: 5px;
+padding: 5px;
+margin: 7px;
+margin-top:1px;
+
+}
+
+#listItems{
+  list-style-type: none;
+  flex-grow: 1;
+  display:flex;
+  flex-flow:column nowrap;
+  padding: 0;
+  margin:0;
+  flex-wrap:wrap;
+}
+
+.item{
+display:flex;
+padding-top: 1rem;
+gap:1em;
+flex-wrap:wrap;
+}
+
+
+.item>input[type="checkbox"]{
+  width:30px;
+height:20px;
+
+}
+
+.item>label{
+  font-size: larger;
+  word-break:break-all;
+
+}
+.item>input[type="checkbox"]:checked+label{
+  text-decoration: line-through;
+}
+
+
+
+@media (min-width:768px){
+  section{
+    padding:1rem;
+
+  }
+  .newItemEntry_form{
+    gap:0.5rem;
+  }
+}
+
+
+

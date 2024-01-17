@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task adder </title>
+  <link rel="stylesheet" href="./src/CSS/style.css">
+  <script type="module" src="./src/main.ts" defer></script>
+</head>
+<body>
+  <main>
+ <section class="newItemEntry">
+  <form class="newItemEntry_form" id="itemEntryForm">
+    <label for="newItem" class="offscreen" >Add New Item</label>
+    <input type="text" id="newItem" class="newItemEntry_input" maxlength="40" autocomplete="off" placeholder="Add Task" >
+    <button id="addItem" title="add new item" class="button newItemEntry_button" aria-label="Add new item">
+      +
+    </button>
+  </form>
+ </section>
+ 
+ <section class="listContainer">
+  <header class="listContainer_header">
+    <h2 id="listName">List</h2>
+    <button id="clearItemsButton" class="button listContainer_button">Clear</button>
+  </header>
+  <hr/>
+  <ul id="listItems">
+   <!-- <li class="item">
+      <input type="checkbox" id="1">
+      <label for="1">eat</label>
+      <button class="button_delete">X</button>
+    </li>
+    <li class="item">
+      <input type="checkbox" id="2">
+      <label for="2">study</label>
+      <button class="button_delete">X</button>
+    </li>
+    <li class="item">
+      <input type="checkbox" id="3">
+      <label for="3">sleep</label>
+      <button class="button_delete">X</button>
+    </li> -->
+  </ul>
+
+ </section>
+</main>
+</body>
+</html>
